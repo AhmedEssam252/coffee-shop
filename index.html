@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop | Home</title>
+    <link rel="icon" href="./svg/header-nav/nav/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="side-nav">
+          <div class="icon icon1"><img class="logo svg1" src="./svg/header-nav/nav/logo.svg" alt="logo" width="100" height="100"><span>Coffee Shop</span></div>
+          <div class="icon icon2"><img class="svg svg2" src="./svg/header-nav/nav/coffee-break.png" alt="logo" width="60" height="60" onclick="ChangeImg('./svg/header-nav/nav/menu1.webp')"><span onclick="ChangeImg('./svg/header-nav/nav/menu1.webp')">Menu</span></div>
+          <div class="icon icon3"><img class="svg svg3" src="./svg/header-nav/nav/waitar.png" alt="logo" width="60" height="60" onclick="ChangeImg('./svg/header-nav/nav/services1.webp')"><span onclick="ChangeImg('./svg/header-nav/nav/services1.webp')">Services</span></div>
+          <div class="icon icon4"><img class="svg svg4" src="./svg/header-nav/nav/order3.png" alt="logo" width="60" height="60" onclick="ChangeImg('./svg/header-nav/nav/order1.webp')"><span onclick="ChangeImg('./svg/header-nav/nav/order1.webp')">Order</span></div>
+          <div class="icon icon5"><img class="svg svg5" src="./svg/header-nav/nav/call-center-agent.png" width="60" height="60" alt="logo" onclick="ChangeImg('./svg/header-nav/nav/cheifs2.webp')"><span onclick="ChangeImg('./svg/header-nav/nav/cheifs2.webp')">Call Center</span></div>
+          <div class="icon icon6">
+            <div class="line line1"> </div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
+        </div>
+        <div id="content-nav"><img class="menu menu1" src="./svg/header-nav/nav/menu1.webp" alt="menu1" width="500" height="300">
+          <button>Read More</button>
+        </div>
+      </nav>
+      <section id="landing">
+        <div id="head-text">
+          <div class="text">
+            <h1 class="coffee-text">Drink</h1>
+            <h1 class="plant">some thing</h1>
+            <h1 class="text-change"></h1>
+          </div>
+          <div id="new-fun">
+            <div class="new">
+              <div> </div>
+              <h2>New</h2>
+              <div></div>
+            </div>
+            <div class="fun">
+              <div> </div>
+              <h2>Fun</h2>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="head-img">
+          <div class="cont"><img src="./svg/header-nav/header/girl.webp" alt="girl"><img  src="./svg/header-nav/header/make-coffee.webp" alt="make-coffee"></div><img class="img-def" src="./svg/header-nav/header/two-cups.webp" alt="two-cups"><h1 class="plant2"></h1>
+        </div>
+      </section>
+    </header>
+
+    <section id="new">
+      <h1>New</h1>
+      <div class="new">
+        <div class="text">
+          <img src="/svg/section2/long-cup-coffee-0١.svg" alt="cup" width="150px" height="150px">
+          <h2>Drink</h2>
+          <h2>before</h2>
+          <h2>Any One</h2>
+          <img class="plant" src="/svg/section2/coffee-plant.svg" alt="plant" width="150px" height="150px">
+        </div>
+        <div class="drinks">
+          <div class="cover">
+            <img src="svg/section2/L-02.jpg" alt="new" width="350px" height="250px" class="show-drink">
+            <span><button>Order Now</button></span>
+            </div>
+           <div>
+            <img src="svg/section2/L-02.jpg" alt="new" width="100px" height="60px" onclick="sliderImg(this.src)">
+            <img src="svg/section2/new-cup.jpg" alt="new" width="100px" height="60px" onclick="sliderImg(this.src)">
+            <img src="svg/section2/round-lid-large-02.jpg" alt="new" width="100px" height="60px" onclick="sliderImg(this.src)">
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="fun">
+      <h1>Fun</h1>
+        <div class="fun">
+          <form action="" id="enter-name">
+            <label for="name">Enter your Name</label>
+            <input type="text" name="name" id="name">
+          </form>
+          <div class="boxs">
+            <div class="box" id="box1" onclick="openBox(this.id)">
+              <div class="staker"></div>
+            </div>
+            <h2>Choose one</h2>
+            <div class="box" id="box2" onclick="openBox(this.id)">
+              <div class="staker"></div>
+            </div>
+          </div>
+          </form>
+        </div> 
+    </section> -->
+
+    <footer id="footer">
+      <div class="contact">
+        <img src="./svg/header-nav/nav/logo.svg" alt="logo" width="200" height="200">
+        <h1>Contact Us</h1>
+        <div class="social-media">
+          <img src="svg/footer/facebook-social-media-svgrepo-com.svg" alt="" width="40" height="40">
+          <img src="svg/footer/whatsapp-social-media-svgrepo-com.svg" alt="" width="40" height="40">
+          <img src="svg/footer/twitter-social-media-communication-network-internet-connection-svgrepo-com.svg" alt="" width="40" height="40">
+          <img src="svg/footer/pinterest-social-media-communication-network-conversation-internet-svgrepo-com.svg" alt="" width="40" height="40">
+        </div>
+      </div>
+      <div class="list-nav">
+        <div class="icon icon2"><img class="svg svg2" src="./svg/header-nav/nav/coffee-break.png" alt="logo" width="60" height="60"></div>
+        <div class="icon icon3"><img class="svg svg3" src="./svg/header-nav/nav/waitar.png" alt="logo"  width="60" height="60"></div>
+        <div class="icon icon4"><img class="svg svg4" src="./svg/header-nav/nav/order3.png" alt="logo"  width="60" height="60"></div>
+        <div class="icon icon5"><img class="svg svg5" src="./svg/header-nav/nav/call-center-agent.png" alt="logo" width="60" height="60"></div>
+      </div>     
+    </footer>
+
+    <script src="js/main.js"></script> 
+  </body>
+</html>
